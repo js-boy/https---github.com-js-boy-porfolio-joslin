@@ -1,6 +1,6 @@
 [build]
   base = "Frontend"
-  command = "cd Frontend && npm install && npm run build"
+  command = "cd Frontend && npm install --legacy-peer-deps && npm uninstall husky --save-dev && npm run build"
   publish = "Frontend/build"
   functions = "Frontend/functions"
 
