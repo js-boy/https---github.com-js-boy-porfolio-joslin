@@ -1,0 +1,10 @@
+[build]
+  base = "Frontend"
+  command = "cd Frontend && npm install && npm run build"
+  publish = "Frontend/build"
+  functions = "Frontend/functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
