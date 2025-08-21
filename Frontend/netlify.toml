@@ -1,6 +1,7 @@
 [build]
-    command = "npm run build && npm run build"
-    publish = "build"
+    base = "Frontend"
+    command = "CI= npm run build && npm run build"
+    publish = "Frontend/build"
     function = "functions"
 
 [[redirects]] 
