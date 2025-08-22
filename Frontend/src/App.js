@@ -9,7 +9,7 @@ import Loader from './common/components/loader';
 import { Footer } from './common/components/footer';
 import { Navbar } from './common/components/navbar';
 import {fetchPorfolioMessage} from "./services/Api";
-
+import { logError } from './common/utilities/errorLogger';
 
 const App = () => {
 	const [message, setMessage] = useState('');
@@ -27,7 +27,7 @@ const App = () => {
 				const data = await fetchPorfolioMessage();
 				setMessage(data.message);
 			} catch (error) {
-				console.error('Failed to fetch message:', error);
+				logError('Failed to fetch message:', error);
 			}
 		};
 		getMessage();
