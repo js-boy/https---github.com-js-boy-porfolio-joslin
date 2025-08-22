@@ -31,7 +31,7 @@ Clone the repository and install the dependencies.
 ```bash
 git clone  https://github.com/kilamaelie/react-porfolio.git
 
-cd react-porfolio
+cd react-porfolio/Frontend
 
 yarn
 ```
